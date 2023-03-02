@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LibraryActivity"
+    android:background="@drawable/appbg">
+
+    <RelativeLayout
+        android:id="@+id/action_library"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/custom_relative">
+
+        <RelativeLayout
+            android:id="@+id/action_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/top_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/back_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="22dp"
+                    android:src="@drawable/ic_back" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/list_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_bar"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/library"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/cardview_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/top_bar"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="4dp"
+                android:layout_toLeftOf="@id/grid_button"
+                android:src="@drawable/ic_cardview" />
+
+            <ImageButton
+                android:id="@+id/grid_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/top_bar"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="4dp"
+                android:layout_toLeftOf="@id/list_button"
+                android:src="@drawable/ic_gridview" />
+
+            <ImageButton
+                android:id="@+id/list_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/top_bar"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_listview" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_book"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/action_bar"
+            tools:listitem="@layout/item_row_book" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

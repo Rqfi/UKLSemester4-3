@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">REED</string>
+    <string name="sign_in">Sign in</string>
+    <string name="log_in">Log in</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgot_pass"><u>Forgot Password?</u></string>
+    <string name="welcome">Welcome!</string>
+    <string name="profile_username">@erqifi</string>
+    <string name="edit">Edit Profil</string>
+    <string name="report">Laporan</string>
+    <string name="setting">Pengaturan</string>
+    <string name="bookmark">Tersimpan</string>
+    <string name="paper">Karya Saya</string>
+    <string name="profile_desc">I just like reading some interesting story. Specially for romance, I guess</string>
+    <string name="search">Telusuri</string>
+    <string name="novel">Novel</string>
+    <string name="fiction">Fiction</string>
+    <string name="documentation">History</string>
+    <string name="library">Library</string>
+    <string name="book_name">Nama Buku</string>
+    <string name="type">Tipe</string>
+    <string name="description">Deskripsi</string>
+    <string name="nameHomeLib">Sang Pemimpi</string>
+    <string name="descHomeLib">Buku Kedua Andrea ini bercerita tentang masa SMA tiga orang pemuda, yaitu Ikal, Arai dan Jimbron. Mereka bertiga adalah remaja yang berasal dari Belitong dan melanjutkan sekolah di Manggar, SMA Negeri pertama di Manggar.</string>
+    <string name="lib_button">Library</string>
+    <string name="nameHomeLiby">Laut Bercerita</string>
+    <string name="descHomeLiby">Laut Bercerita menceritakan terkait perilaku kekejaman dan kebengisan yang dirasakan oleh kelompok aktivis mahasiswa di masa Orde Baru. Tidak hanya itu, novel ini pun merenungkan kembali akan hilangnya 13 aktivis, bahkan sampai saat ini belum juga ada yang mendapatkan petunjuknya.</string>
+    <string name="see_more"><u>Lihat Lainnya ></u></string>
+    <string name="user">Pengguna</string>
+    <string name="see_profile"><u>Lihat Profil ></u></string>
+    <string name="credits">ProjectUKLRecyclerView\n Rafi Kurniawan Yogananda - SMK Telkom Malang</string>
+</resources>
