@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 
 class LoginActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var edtUsername: EditText
@@ -22,6 +23,10 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         btnLogin = findViewById(R.id.btnLogin)
 
         btnLogin.setOnClickListener(this)
+
+        val btnReg: TextView =
+            findViewById(R.id.btnReg)
+        btnReg.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -43,6 +48,12 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
             val email = edtUsername.text.toString()
             dataReceived.putExtra("String", email)
             startActivity(dataReceived)
+        }
+        when (v.id) {
+            R.id.btnReg -> {
+                val moveToReg = Intent(this@LoginActivity, SigninActivity::class.java)
+                startActivity(moveToReg)
+            }
         }
     }
 }

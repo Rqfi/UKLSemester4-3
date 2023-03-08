@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">REED</string>
     <string name="sign_in">Sign in</string>
     <string name="log_in">Log in</string>
@@ -30,4 +30,9 @@
     <string name="user">Pengguna</string>
     <string name="see_profile"><u>Lihat Profil ></u></string>
     <string name="credits">ProjectUKLRecyclerView\n Rafi Kurniawan Yogananda - SMK Telkom Malang</string>
+    <string name="registration">Sign In</string>
+    <string name="reg_remind">Do not have account yet? please </string>
+    <string name="btnSign_in"><u><b>Sign In</b></u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
