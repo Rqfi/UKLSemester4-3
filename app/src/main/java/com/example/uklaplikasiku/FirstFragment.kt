@@ -31,6 +31,7 @@ class FirstFragment : Fragment() {
         val nameEditText = view.findViewById<TextInputEditText>(R.id.textInputTextName)
         val emailEditText = view.findViewById<TextInputEditText>(R.id.textInputTextEmail)
         val usernameEditText = view.findViewById<TextInputEditText>(R.id.textInputTextUsername)
+        val passwordEditText = view.findViewById<TextInputEditText>(R.id.textInputTextPassword)
         nameEditText.addTextChangedListener(
             object : TextWatcher {
                 override fun beforeTextChanged(
@@ -82,6 +83,25 @@ class FirstFragment : Fragment() {
                 override fun onTextChanged(
                     charSequence: CharSequence, i: Int, i1: Int, i2: Int) {
                     communicationViewModel!!.setUsername(charSequence.toString())
+                }
+
+                override fun afterTextChanged(editable: Editable) { }
+
+            })
+        passwordEditText.addTextChangedListener(
+            object : TextWatcher {
+                override fun beforeTextChanged(
+                    charSequence: CharSequence?,
+                    i: Int,
+                    i1: Int,
+                    i2: Int
+                ) {
+
+                }
+
+                override fun onTextChanged(
+                    charSequence: CharSequence, i: Int, i1: Int, i2: Int) {
+                    communicationViewModel!!.setPassword(charSequence.toString())
                 }
 
                 override fun afterTextChanged(editable: Editable) { }
