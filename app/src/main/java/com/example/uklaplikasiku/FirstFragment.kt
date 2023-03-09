@@ -29,10 +29,17 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val nameEditText = view.findViewById<TextInputEditText>(R.id.textInputTextName)
+        val emailEditText = view.findViewById<TextInputEditText>(R.id.textInputTextEmail)
+        val usernameEditText = view.findViewById<TextInputEditText>(R.id.textInputTextUsername)
         nameEditText.addTextChangedListener(
             object : TextWatcher {
                 override fun beforeTextChanged(
-                    charSequence: CharSequence, i: Int, i1: Int, i2: Int) {
+                    charSequence: CharSequence,
+                    i: Int,
+                    i1: Int,
+                    i2: Int
+                ) {
+
                 }
 
                 override fun onTextChanged(
@@ -41,6 +48,44 @@ class FirstFragment : Fragment() {
                 }
 
                 override fun afterTextChanged(editable: Editable) { }
+            })
+        emailEditText.addTextChangedListener(
+            object : TextWatcher {
+                override fun beforeTextChanged(
+                    charSequence: CharSequence?,
+                    i: Int,
+                    i1: Int,
+                    i2: Int
+                ) {
+
+                }
+
+                override fun onTextChanged(
+                    charSequence: CharSequence, i: Int, i1: Int, i2: Int) {
+                    communicationViewModel!!.setEmail(charSequence.toString())
+                }
+
+                override fun afterTextChanged(editable: Editable) { }
+
+            })
+        usernameEditText.addTextChangedListener(
+            object : TextWatcher {
+                override fun beforeTextChanged(
+                    charSequence: CharSequence?,
+                    i: Int,
+                    i1: Int,
+                    i2: Int
+                ) {
+
+                }
+
+                override fun onTextChanged(
+                    charSequence: CharSequence, i: Int, i1: Int, i2: Int) {
+                    communicationViewModel!!.setUsername(charSequence.toString())
+                }
+
+                override fun afterTextChanged(editable: Editable) { }
+
             })
     }
 

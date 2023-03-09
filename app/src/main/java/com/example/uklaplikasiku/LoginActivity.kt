@@ -27,6 +27,10 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         val btnReg: TextView =
             findViewById(R.id.btnReg)
         btnReg.setOnClickListener(this)
+
+        val btnForgor: TextView =
+            findViewById(R.id.forgor)
+        btnForgor.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -53,6 +57,10 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnReg -> {
                 val moveToReg = Intent(this@LoginActivity, SigninActivity::class.java)
                 startActivity(moveToReg)
+            }
+            R.id.forgor -> {
+                val moveToF = Intent(this@LoginActivity, ForgotPasswordActivity:: class.java)
+                startActivity(moveToF)
             }
         }
     }

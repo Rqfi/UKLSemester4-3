@@ -12,6 +12,8 @@ import androidx.lifecycle.ViewModelProviders
 class SecondFragment : Fragment() {
     private var communicationViewModel: CommunicationViewModel? = null
     private var txtName: TextView? = null
+    private var txtEmail: TextView? = null
+    private var txtUsername: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +32,15 @@ class SecondFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         txtName = view.findViewById(R.id.textViewName)
         communicationViewModel!!.name.observe(requireActivity(),
-        Observer { s -> txtName!!.text = s })
+            Observer { s -> txtName!!.text = s })
+
+        txtEmail = view.findViewById(R.id.textViewEmail)
+        communicationViewModel!!.email.observe(requireActivity(),
+            Observer { s -> txtEmail!!.text = s })
+
+        txtUsername = view.findViewById(R.id.textViewUsername)
+        communicationViewModel!!.username.observe(requireActivity(),
+            Observer { s -> txtUsername!!.text = s })
     }
 
     companion object {
