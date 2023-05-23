@@ -19,6 +19,10 @@ class ProfileActivity : AppCompatActivity(), View.OnClickListener {
             findViewById(R.id.back_button)
         btnBackToHome.setOnClickListener(this)
 
+        val database: TextView =
+            findViewById(R.id.database)
+        database.setOnClickListener(this)
+
         text = findViewById(R.id.emailText)
 
         val email = intent.getStringExtra("String")
@@ -32,6 +36,10 @@ class ProfileActivity : AppCompatActivity(), View.OnClickListener {
             R.id.back_button -> {
                 val moveToHome = Intent(this@ProfileActivity, HomeActivity::class.java)
                 startActivity(moveToHome)
+            }
+            R.id.database -> {
+                val database = Intent(this@ProfileActivity, FrenActivity::class.java)
+                startActivity(database)
             }
         }
     }

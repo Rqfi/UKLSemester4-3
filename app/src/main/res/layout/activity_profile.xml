@@ -219,13 +219,16 @@
 
             </RelativeLayout>
 
-            <RelativeLayout
+            <TextView
+                android:id="@+id/database"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-
-
-            </RelativeLayout>
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="22dp"
+                android:layout_marginBottom="22dp"
+                android:text="Database"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:clickable="true"/>
 
         </LinearLayout>
 

@@ -55,7 +55,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         }
         when (v.id) {
             R.id.btnReg -> {
-                val moveToReg = Intent(this@LoginActivity, SigninActivity::class.java)
+                val moveToReg = Intent(this@LoginActivity, FrenActivity::class.java)
                 startActivity(moveToReg)
             }
             R.id.forgor -> {

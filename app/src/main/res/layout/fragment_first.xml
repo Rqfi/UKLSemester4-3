@@ -5,13 +5,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstFragment">
+    tools:context=".FrenAddFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/custom_relative"
-        android:layout_margin="32dp">
+        android:background="@drawable/custom_relative">
 
         <TextView
             android:id="@+id/sign_in"
@@ -62,6 +61,9 @@
                 android:hint="Nama" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
+
+
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputEmail"
@@ -125,12 +127,14 @@
                 android:id="@+id/textInputTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="textPassword"
                 android:hint="Password" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <Button
+            android:id="@+id/btnSingup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
