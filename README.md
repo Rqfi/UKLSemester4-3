@@ -4,6 +4,14 @@ Projek UKL dari materi :
 - Fragment
 - Database Local Room (uncomplete)
 
+Update
+- first commit (RecyclerView)
+- second commit (Fragment in register/sign up)
+- third commit (forgor pass (j4f))
+- forth commit (Fragment in register/sign up update)
+- fifth commit (Splash Screen)
+- Sixth commit (Database Room (not yet eligible) :(
+
 Login Page
 ![Screenshot_20230302-080838](https://user-images.githubusercontent.com/95407254/222305634-75e92832-739f-4dcd-b349-9901a13c17f8.png)
 
